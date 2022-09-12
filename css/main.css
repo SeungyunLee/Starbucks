@@ -52,7 +52,7 @@ a {
 
 .btn.btn--brown {
   color:  #592B18;
-  background-color: #592B18;
+  border: 2px solid #592B18;
 }
 .btn.btn--brown:hover {
   color: #fff;
@@ -60,7 +60,7 @@ a {
 }
 .btn.btn--gold {
   color:#D9AA8A;
-  background-color:#D9AA8A;
+  border: 2px solid #D9AA8A;
 }
 .btn.btn--gold:hover{
   color:#fff;
@@ -68,13 +68,14 @@ a {
 }
 .btn.btn--white {
   color:#fff;
-  background-color:#fff;
+  border: 2px solid #fff;
 }
 .btn.btn--white:hover {
   color:#333;
   background-color:#fff;
 }
 
+/* Back to position */
 .back-to-position {
   opacity: 0;
   transition:1s;
@@ -84,7 +85,7 @@ a {
 
 }
 .back-to-position.to-left {
-  transform:translateX(150px);
+  transform: translateX(150px);
 }
 .show .back-to-position {
   opacity:1s;
@@ -724,7 +725,7 @@ header .badges .badge {
   background-size: cover;
 }
 .reserve-store .inner{
-  height:600px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -736,8 +737,8 @@ header .badges .badge {
 }
 .reserve-store .medal .front,
 .reserve-store .medal .back {
-  width: 334px;
-  height: 334px;
+  width: inherit;
+  height: inherit;
   backface-visibility:hidden;
   transition: 1s;
   position: absolute;
@@ -771,7 +772,7 @@ header .badges .badge {
   height: 400px;
 }
 .find-store .texture1 {
-  position:absolute;
+  position: absolute;
   top:0;
   left:400px;
 }
@@ -783,7 +784,7 @@ header .badges .badge {
 .find-store .picture {
   position: absolute;
   border-radius:50%;
-  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+  box-shadow: 2px 2px 8px 0 rgba(0,0,0,.5);
 }
 .find-store .picture1 {
   top: -60px;
